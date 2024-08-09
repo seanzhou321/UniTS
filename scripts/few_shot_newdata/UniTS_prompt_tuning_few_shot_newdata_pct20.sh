@@ -1,11 +1,15 @@
 model_name=UniTS
-wandb_mode=online
+## wandb_mode=online
+wandb_mode=offline
 project_name=fewshot_newdata
 exp_name=fewshot_newdata_prompt_tuning_pct20
 random_port=$((RANDOM % 9000 + 1000))
 
 # Path to the SSL pre-trained checkpoint
-ckpt_path=newcheckpoints/units_x128_pretrain_checkpoint.pth
+# ckpt_path=newcheckpoints/units_x128_pretrain_checkpoint.pth
+ckpt_path=releases/units_x128_pretrain_checkpoint.pth
+
+export CUDA_LAUNCH_BLOCKING=1
 
 torchrun --nnodes 1 --master_port $random_port run.py \
   --is_training 1 \
@@ -30,4 +34,4 @@ torchrun --nnodes 1 --master_port $random_port run.py \
   --debug $wandb_mode \
   --project_name $project_name \
   --pretrained_weight $ckpt_path \
-  --task_data_config_path data_provider/fewshot_new_task.yaml
+  --task_data_config_path data_provider/fewshot_new_task_min.yaml

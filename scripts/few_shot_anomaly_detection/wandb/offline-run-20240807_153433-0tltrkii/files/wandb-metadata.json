@@ -1,0 +1,157 @@
+{
+    "os": "Linux-6.5.0-45-generic-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "heartbeatAt": "2024-08-07T22:34:33.922951",
+    "startedAt": "2024-08-07T22:34:33.844807",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--fix_seed",
+        "2021",
+        "--is_training",
+        "1",
+        "--subsample_pct",
+        "0.05",
+        "--model_id",
+        "finetune_few_shot_anomaly_detection_pct05",
+        "--pretrained_weight",
+        "releases/units_x128_pretrain_checkpoint.pth",
+        "--model",
+        "UniTS",
+        "--prompt_num",
+        "10",
+        "--patch_len",
+        "16",
+        "--stride",
+        "16",
+        "--e_layers",
+        "3",
+        "--d_model",
+        "128",
+        "--des",
+        "Exp",
+        "--itr",
+        "1",
+        "--lradj",
+        "finetune_anl",
+        "--learning_rate",
+        "5e-4",
+        "--weight_decay",
+        "1e-3",
+        "--train_epochs",
+        "10",
+        "--batch_size",
+        "32",
+        "--acc_it",
+        "32",
+        "--dropout",
+        "0",
+        "--debug",
+        "offline",
+        "--project_name",
+        "anomaly_detection",
+        "--clip_grad",
+        "100",
+        "--task_data_config_path",
+        "data_provider/anomaly_detection_min.yaml"
+    ],
+    "state": "running",
+    "program": "/home/gpt100/llm/github/UniTS/scripts/few_shot_anomaly_detection/../../run.py",
+    "codePathLocal": null,
+    "codePath": "run.py",
+    "git": {
+        "remote": "https://github.com/seanzhou321/UniTS",
+        "commit": "ce20ae50bb3c48da021f2871d8cb204eaf070ae6"
+    },
+    "email": null,
+    "root": "/home/gpt100/llm/github/UniTS",
+    "host": "gpt100-desktop",
+    "username": "gpt100",
+    "executable": "/home/gpt100/llm/github/UniTS/venv/bin/python",
+    "cpu_count": 6,
+    "cpu_count_logical": 12,
+    "cpu_freq": {
+        "current": 3327.8033333333333,
+        "min": 2200.0,
+        "max": 3600.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3961.835,
+            "min": 2200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 4014.598,
+            "min": 2200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 4012.584,
+            "min": 2200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 2007.943,
+            "min": 2200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 2468.399,
+            "min": 2200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 3950.488,
+            "min": 2200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 4000.75,
+            "min": 2200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 4014.688,
+            "min": 2200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 3992.496,
+            "min": 2200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1995.686,
+            "min": 2200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 2659.11,
+            "min": 2200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 3992.794,
+            "min": 2200.0,
+            "max": 3600.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 1803.3508567810059,
+            "used": 171.40815353393555
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3060",
+            "memory_total": 12884901888
+        }
+    ],
+    "memory": {
+        "total": 15.534770965576172
+    }
+}

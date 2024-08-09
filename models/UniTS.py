@@ -206,7 +206,7 @@ class LearnablePositionalEmbedding(nn.Module):
     def forward(self, x, offset=0):
         return self.pe[:, :, offset:offset+x.size(2)]
 
-
+# Time MHSA
 class SeqAttention(nn.Module):
 
     def __init__(
@@ -248,7 +248,7 @@ class SeqAttention(nn.Module):
         x = self.proj_drop(x)
         return x
 
-
+# Variable MHSA
 class VarAttention(nn.Module):
 
     def __init__(

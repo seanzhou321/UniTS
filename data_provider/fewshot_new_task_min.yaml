@@ -1,0 +1,121 @@
+task_dataset:
+
+  LTF_ETTh2_p96:
+    task_name: long_term_forecast
+    dataset: ETTh2
+    data: ETTh2
+    embed: timeF
+    root_path: dataset/ETT-small/
+    data_path: ETTh1.csv
+    features: M
+    seq_len: 96
+    label_len: 48
+    pred_len: 96
+    enc_in: 7
+    dec_in: 7
+    c_out: 7
+
+  LTF_ETTh2_p192:
+    task_name: long_term_forecast
+    dataset: ETTh2
+    data: ETTh2
+    embed: timeF
+    root_path: dataset/ETT-small/
+    data_path: ETTh2.csv
+    features: M
+    seq_len: 96
+    label_len: 48
+    pred_len: 192
+    enc_in: 7
+    dec_in: 7
+    c_out: 7
+
+  LTF_ETTh2_p336:
+    task_name: long_term_forecast
+    dataset: ETTh2
+    data: ETTh2
+    embed: timeF
+    root_path: dataset/ETT-small/
+    data_path: ETTh2.csv
+    features: M
+    seq_len: 96
+    label_len: 48
+    pred_len: 336
+    enc_in: 7
+    dec_in: 7
+    c_out: 7
+
+  LTF_ETTh2_p720:
+    task_name: long_term_forecast
+    dataset: ETTh2
+    data: ETTh2
+    embed: timeF
+    root_path: dataset/ETT-small/
+    data_path: ETTh2.csv
+    features: M
+    seq_len: 96
+    label_len: 48
+    pred_len: 720
+    enc_in: 7
+    dec_in: 7
+    c_out: 7
+
+  LTF_ETTm1_p96:
+    task_name: long_term_forecast
+    dataset: ETTm1
+    data: ETTm1
+    embed: timeF
+    root_path: dataset/ETT-small/
+    data_path: ETTm1.csv
+    features: M
+    seq_len: 96
+    label_len: 48
+    pred_len: 96
+    enc_in: 7
+    dec_in: 7
+    c_out: 7
+
+  LTF_ETTm1_p192:
+    task_name: long_term_forecast
+    dataset: ETTm1
+    data: ETTm1
+    embed: timeF
+    root_path: dataset/ETT-small/
+    data_path: ETTm1.csv
+    features: M
+    seq_len: 96
+    label_len: 48
+    pred_len: 192
+    enc_in: 7
+    dec_in: 7
+    c_out: 7
+
+  LTF_ETTm1_p336:
+    task_name: long_term_forecast
+    dataset: ETTm1
+    data: ETTm1
+    embed: timeF
+    root_path: dataset/ETT-small/
+    data_path: ETTm1.csv
+    features: M
+    seq_len: 96
+    label_len: 48
+    pred_len: 336
+    enc_in: 7
+    dec_in: 7
+    c_out: 7
+
+  LTF_ETTm1_p720:
+    task_name: long_term_forecast
+    dataset: ETTm1
+    data: ETTm1
+    embed: timeF
+    root_path: dataset/ETT-small/
+    data_path: ETTm1.csv
+    features: M
+    seq_len: 96
+    label_len: 48
+    pred_len: 720
+    enc_in: 7
+    dec_in: 7
+    c_out: 7

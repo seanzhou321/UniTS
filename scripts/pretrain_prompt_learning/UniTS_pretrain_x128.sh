@@ -1,6 +1,6 @@
 model_name=UniTS
 exp_name=UniTS_pretrain_x128
-wandb_mode=online
+wandb_mode=offline
 ptune_name=prompt_tuning
 
 d_model=128

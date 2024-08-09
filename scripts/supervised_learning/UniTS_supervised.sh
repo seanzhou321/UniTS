@@ -1,6 +1,6 @@
 model_name=UniTS
 exp_name=UniTS_supervised_x64
-wandb_mode=online
+wandb_mode=offline
 project_name=supervised_learning
 
 random_port=$((RANDOM % 9000 + 1000))
@@ -25,4 +25,4 @@ torchrun --nnodes 1 --nproc-per-node=1  --master_port $random_port  run.py \
   --debug $wandb_mode \
   --project_name $project_name \
   --clip_grad 100 \
-  --task_data_config_path data_provider/multi_task.yaml
+  --task_data_config_path data_provider/multi_task_min.yaml
